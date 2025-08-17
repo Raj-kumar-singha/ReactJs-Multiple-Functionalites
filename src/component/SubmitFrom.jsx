@@ -7,8 +7,7 @@ import { Link } from 'react-router-dom';
 
 
 
-const CONTACT_APPS_SCRIPT_URL =
-  'https://script.google.com/macros/s/AKfycbz_kEz55BXgDwn6w9G31Dw22b_GI1apbKwvuSQiUtEhErYVVLC3M8J5l4-x2spi3sw/exec'; 
+const CONTACT_APPS_SCRIPT_URL = import.meta.env.VITE_CONTACT_APPS_SCRIPT_URL;
 
 const schema = Yup.object({
   name: Yup.string().trim().min(2, 'Enter your full name').required('Name is required'),
